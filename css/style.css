@@ -16,8 +16,12 @@
 /* HEADER ------------------------------------------- */
 
 header {
-    padding: 40px 0;
-    color: #d9477a;
+    padding: 35px 0 60px;
+    color: #e0576e;
+}
+
+header > h1 {
+    font-size: 37px;
 }
 
 header > h1, .cards > h3 {
@@ -85,6 +89,10 @@ main p:first-child, header {
 
 .cards *:not(img){
     height: calc(calc(100% - 5px) / 3);
+}
+
+.cards > p:not(.email){
+    font-weight: 600;
 }
 
 .email {
