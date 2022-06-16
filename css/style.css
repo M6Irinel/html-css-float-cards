@@ -16,7 +16,7 @@
 /* HEADER ------------------------------------------- */
 
 header {
-    padding: 35px 0 60px;
+    padding: 34px 0 52px;
     color: #e0576e;
 }
 
@@ -31,7 +31,7 @@ header > h1, .cards > h3 {
 /* MAIN -------------------------------------------- */
 
 main {
-    width: 1150px;
+    width: 1135px;
     margin: auto;
 }
 
@@ -40,10 +40,14 @@ main p:first-child, header {
     font-weight: 600;
 }
 
+main p:first-child {
+    letter-spacing: 1px;
+}
+
 /* CONTAINER -------------------------------------- */
 
 .container {
-    margin-top: 50px;
+    margin-top: 53px;
 }
 
 .container::after, .cards::after {
@@ -80,23 +84,29 @@ main p:first-child, header {
 .cards img {
     float: left;
     height: 100%;
-    margin-right: 15px;
+    margin-right: 16px;
 }
 
 .cards h3 {
-    margin-top: 10px;
+    margin-top: 13px;
+    font-size: 17px;
 }
 
 .cards *:not(img){
-    height: calc(calc(100% - 5px) / 3);
+    height: calc(calc(100% - 10px) / 3);
 }
 
 .cards > p:not(.email){
     font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.cards > p {
+    font-size: 15px;
 }
 
 .email {
     font-family: 'ABeeZee', sans-serif;
-    color: #4dcadb;
-    margin-top: -5px;
+    color: #5cc2eb;
+    margin-top: -4px;
 }
