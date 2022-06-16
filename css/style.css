@@ -35,12 +35,12 @@ main {
     margin: auto;
 }
 
-main p:first-child, header {
+main > p, header {
     text-align: center;
     font-weight: 600;
 }
 
-main p:first-child {
+main > p {
     letter-spacing: 1px;
 }
 
@@ -88,25 +88,29 @@ main p:first-child {
 }
 
 .cards h3 {
-    margin-top: 13px;
-    font-size: 17px;
+    margin-top: 14px;
+    font-size: 16.5px;
+    letter-spacing: 1px;
 }
 
 .cards *:not(img){
-    height: calc(calc(100% - 10px) / 3);
-}
-
-.cards > p:not(.email){
-    font-weight: 600;
-    letter-spacing: 1px;
+    height: calc(calc(100% - 11px) / 3);
 }
 
 .cards > p {
     font-size: 15px;
 }
 
-.email {
+.cards > a, .cards > p {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+a.email {
+    font-size: 13px;
     font-family: 'ABeeZee', sans-serif;
     color: #5cc2eb;
-    margin-top: -4px;
+    position: relative;
+    bottom: 5px;
+    text-decoration: none;
 }
